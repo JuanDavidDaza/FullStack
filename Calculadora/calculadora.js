@@ -1,3 +1,5 @@
+let op = 0;
+
 let btn0 = document.getElementById("btn0");
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
@@ -9,7 +11,11 @@ let btn7 = document.getElementById("btn7");
 let btn8 = document.getElementById("btn8");
 let btn9 = document.getElementById("btn9");
 
+let borrar = document.getElementById("btn<=");
+
 let pantalla = document.getElementById("pantalla");
+
+// numeros
 
 const fnA0 = () => {
   pantalla.innerHTML += "0";
@@ -49,6 +55,10 @@ const fnA8 = () => {
 
 const fnA9 = () => {
   pantalla.innerHTML += "9";
+};
+
+const fnborrar = () => {
+  pantalla.innerHTML = "";
 };
 
 // Eventos - Oneclic
@@ -91,4 +101,8 @@ btn8.onclick = function () {
 
 btn9.onclick = function () {
   fnA9();
+};
+
+borrar.onclick = function () {
+  fnborrar();
 };
