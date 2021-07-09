@@ -1,5 +1,6 @@
 #pantalla {
     padding: 16px 32px;
+    height: 80px;
     font-size: 25px;
     margin: 8px 0;
     border: 1px solid silver;
